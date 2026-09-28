@@ -1,0 +1,21 @@
+[project]
+name = "integer-linear-programming-course"
+version = "0.1.0"
+description = "A complete hands-on Integer Linear Programming course with Python and Gradio"
+requires-python = ">=3.11"
+dependencies = [
+    "gradio>=5.0",
+    "numpy>=2.0",
+    "polars>=1.0",
+    "pulp>=3.0",
+    "scipy>=1.13",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
